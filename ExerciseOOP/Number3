@@ -1,0 +1,47 @@
+//Problem : Perform addition operation on complex data using class and object. The program should ask for real and
+            imaginary part of two complex numbers, and display the real and imaginary parts of their sum.
+//Solution :
+
+#include <iostream>
+using namespace std;
+
+class Umpama{
+	public:
+
+	double x,y;
+
+	Umpama(double ax, double ay){
+
+	x=ax;
+	y=ay;}
+};
+
+int main(){
+
+	double an1,an2;
+	cout << "Angka pertama \n";
+	cout<< "Angka asli:";
+	cin>> an1;
+	cout<< "Angka umpama:";
+	cin>> an2;
+	Umpama angka1(an1,an2);
+	cout << "Angka kedua \n";
+
+    double an3,an4;
+	cout<< "Angka asli:";
+	cin>> an3;
+	cout<< "Angka umpama:";
+	cin>> an4;
+	Umpama angka2(an3,an4);
+
+	double asli;
+    asli = angka1.x +angka2.x;
+
+    double umpama;
+    umpama = angka2.x + angka1.y;
+
+    cout << "Jumla angka sebenarnya "<< asli << "\n";
+    cout << "Jumlah angka umpama "<< umpama;
+
+    return 0;
+}
