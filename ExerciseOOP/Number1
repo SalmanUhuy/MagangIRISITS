@@ -4,24 +4,23 @@
 #include <iostream>
 using namespace std;
 
-//Pembagian kelas pada PersegiPanjang
-class PersegiPanjang{
-   public:
-   int x,y;
-   int luas(){
+class PersegiPanjang{        //Pembagian kelas pada PersegiPanjang
+   public:                   //Semua orang bisa akses
+   int x,y;                  //Atribut atau nilai x (int variabel)
+   int luas(){               //Atribut atau nilai y (int variabel)
    return x*y;
    }
 };
 
-//akses PersegiPanjang beserta nilainya
+//Akses PersegiPanjang beserta nilainya
 int main () {
 
   PersegiPanjang PP;
-  cout<<"Panjang PersegiPanjang: "; //print nilai panjang PP
+  cout<<"Panjang PersegiPanjang: ";      //print nilai panjang PP
   cin>>PP.x;
-  cout<<"Lebar PersegiPanjang: "; //print nilai lebar PP
+  cout<<"Lebar PersegiPanjang: ";        //print nilai lebar PP
   cin>>PP.y;
-  cout <<"Luas:"<< PP.luas(); //print luas dari PP
+  cout <<"Luas:"<< PP.luas();            //print luas dari PP
 
   return 0;
 }
