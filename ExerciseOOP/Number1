@@ -1,1 +1,26 @@
+\\Problem : Write a class having two private variables and one member function which will return the area of the rectangle.
+\\Solution :
 
+#include <iostream>
+using namespace std;
+
+class PersegiPanjang{
+   public:
+   int x,y;
+   int luas(){
+   return x*y;
+   }
+};
+
+int main () {
+
+  PersegiPanjang PP;
+  cout<<"Panjang PersegiPanjang: ";
+  cin>>PP.x;
+  cout<<"Lebar PersegiPanjang: ";
+  cin>>PP.y;
+  cout <<"Luas:"<< PP.luas();
+
+
+  return 0;
+}
