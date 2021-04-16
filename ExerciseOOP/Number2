@@ -1,0 +1,31 @@
+//Problem : Write a program and input two integers in main and pass them to default constructor of the class. Show the result of the additon of two numbers.
+//Solution :
+
+#include <iostream>
+using namespace std;
+
+class data{
+   public:
+   int an1,an2;
+   data(int angka1,int angka2){
+        an1=angka1;an2=angka2;cout <<"Memproses Angka \n";
+    }
+    int sum_angka(){return an1+an2;}
+};
+
+int main (){
+
+    int angka1;
+	int angka2;
+	cout<<"Angka Pertama : ";
+	cin>>angka1;
+	cout<<"Angka Kedua : ";
+	cin>>angka2;
+
+	data set_nu(angka1,angka2);
+
+	cout << "Hasil penjumlahan:"<< set_nu.sum_angka()<<"\n";
+
+	return 0;
+}
+
