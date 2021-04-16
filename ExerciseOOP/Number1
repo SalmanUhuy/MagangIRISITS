@@ -1,9 +1,10 @@
-\\Problem : Write a class having two private variables and one member function which will return the area of the rectangle.
-\\Solution :
+//Problem : Write a class having two private variables and one member function which will return the area of the rectangle.
+//Solution :
 
 #include <iostream>
 using namespace std;
 
+//Pembagian kelas pada PersegiPanjang
 class PersegiPanjang{
    public:
    int x,y;
@@ -12,15 +13,15 @@ class PersegiPanjang{
    }
 };
 
+//akses PersegiPanjang beserta nilainya
 int main () {
 
   PersegiPanjang PP;
-  cout<<"Panjang PersegiPanjang: ";
+  cout<<"Panjang PersegiPanjang: "; //print nilai panjang PP
   cin>>PP.x;
-  cout<<"Lebar PersegiPanjang: ";
+  cout<<"Lebar PersegiPanjang: "; //print nilai lebar PP
   cin>>PP.y;
-  cout <<"Luas:"<< PP.luas();
-
+  cout <<"Luas:"<< PP.luas(); //print luas dari PP
 
   return 0;
 }
