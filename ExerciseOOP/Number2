@@ -4,13 +4,15 @@
 #include <iostream>
 using namespace std;
 
-class data{
-   public:
-   int an1,an2;
-   data(int angka1,int angka2){
-        an1=angka1;an2=angka2;cout <<"Memproses Angka \n";
+class data{                 //kelas  
+   public:                  //dapat diakses oleh semua orang
+   int an1,an2;             //atribut dari angka 1(an1) & angka 2(an2) 
+   data(int angka1,int angka2){                           //pembangun parameternya          
+        an1=angka1;
+	an2=angka2;
+	cout <<"Memproses Angka \n";                    //print pemrosesan angka yang akan dimasukkan nantinya
     }
-    int sum_angka(){return an1+an2;}
+    int sum_angka(){return an1+an2;}                    //atribut dari penjumlahan angka yang akan dimasukkan nantinya
 };
 
 int main (){
@@ -22,9 +24,9 @@ int main (){
 	cout<<"Angka Kedua : ";
 	cin>>angka2;
 
-	data set_nu(angka1,angka2);
+	data set_nu(angka1,angka2);                                   //mengatur data angka menuju hasil
 
-	cout << "Hasil penjumlahan:"<< set_nu.sum_angka()<<"\n";
+	cout << "Hasil penjumlahan:"<< set_nu.sum_angka()<<"\n";      //print hasil data yang sudah diproses
 
 	return 0;
 }
