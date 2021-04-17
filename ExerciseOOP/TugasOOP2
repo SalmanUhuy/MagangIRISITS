@@ -20,15 +20,16 @@ int main (){
 
     int angka1;
 	int angka2;
-	cout<<"Angka Pertama : ";
-	cin>>angka1;
-	cout<<"Angka Kedua : ";
-	cin>>angka2;
+	cout << "Angka Pertama : ";
+	cin >> angka1;
+	cout << "Angka Kedua : ";
+	cin >> angka2;
 
 	data set_nu(angka1,angka2);
 
-	cout << "Hasil penjumlahan:"<< set_nu.sum_angka()<<"\n";
+	cout << "Hasil penjumlahan: " << set_nu.sum_angka() << endl;
 
 	return 0;
 }
+
 
