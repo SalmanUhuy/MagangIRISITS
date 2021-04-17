@@ -14,7 +14,7 @@ class Hewan{
 	 int umur;
 	 char n1[10], n2[10];
 	public:
-	 void set_data(int a, char b[10]){
+	 void set_value(int a, char b[10]){
 		umur = a;
 		strcpy(b,n1);
 	 }
@@ -47,8 +47,8 @@ int main (){
 	char n1[10]="Budi";
 	char n2[10]="Asep";
 
-	zeb.set_data (4,n1);
-	LL.set_data (4,n2);
+	zeb.set_value (4,n1);
+	LL.set_value (4,n2);
 
 	zeb.message_zebra() ;
 	LL.message_LumbaLumba() ;
