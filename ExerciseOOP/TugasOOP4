@@ -5,12 +5,12 @@
 #include <iostream>
 using namespace std;
 
-class Umpama{                           
-	public:                         
+class Imagin{
+	public:
 
-	double x,y;                     
+	double x,y;
 
-	Umpama(double ax, double ay){   
+	Imagin(double ax, double ay){
 
 	x=ax;
 	y=ay;}
@@ -18,31 +18,33 @@ class Umpama{
 
 int main(){
 
-     	double an1,an2;                 
-	cout << "Angka pertama \n";       
-	cout << "Angka asli:";            
-	cin >> an1;                       
-	cout << "Angka umpama:";          
-	cin >> an2;
-	
-	Umpama angka1(an1,an2);
+	double an1,an2;
+	cout << "Angka pertama \n";
+	cout<< "Angka Origin:";
+	cin>> an1;
+	cout<< "Angka Imagin:";
+	cin>> an2;
+	Imagin angka1(an1,an2);
 	cout << "Angka kedua \n";
-    
-        double an3,an4;
-	cout << "Angka asli:";
-	cin >> an3;
-	cout << "Angka umpama:";
-	cin >> an4;
-	Umpama angka2(an3,an4);
-  
-    double asli;
-    asli = angka1.x +angka2.x;
- 
-    double umpama;
-    umpama = angka2.x + angka1.y;
-  
-    cout << "Jumla angka sebenarnya "<< asli << "\n";
-    cout << "Jumlah angka umpama "<< umpama;
+
+    double an3,an4;
+	cout<< "Angka Origin:";
+	cin>> an3;
+	cout<< "Angka Imagin:";
+	cin>> an4;
+	Imagin angka2(an3,an4);
+
+	double Origin;
+    Origin = angka1.x +angka2.x;
+
+    double Imagin;
+    Imagin = angka2.x + angka1.y;
+
+    cout << "Jumla angka Origin "<< Origin << "\n";
+    cout << "Jumlah angka Imagin "<< Imagin;
 
     return 0;
 }
+
+  
+   
