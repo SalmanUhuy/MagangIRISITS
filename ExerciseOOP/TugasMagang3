@@ -1,0 +1,56 @@
+//Problem : Write a probram with a mother class animal. Inside it define a name and an age variables, and set_value()
+            function.Then create two bases variables Zebra and Dolphin which write a message telling the age, the
+            name and giving some extra information (e.g. place of origin).
+
+//Solution :
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class Hewan{
+	protected:
+	 int umur;
+	 char n1[10], n2[10];
+	public:
+	 void set_data(int a, char b[10]){
+		umur = a;
+		strcpy(b,n1);
+	 }
+};
+
+class Zebra : public Hewan
+{public:
+
+void message_zebra(){
+    cout << "Nama zebra : Budi" << endl;
+    cout << "Umurnya: " << umur << " tahun" << endl;
+    cout << "Makanan kesukaan zebra adalah rumput-rumputan" << endl;
+    }
+};
+
+class LumbaLumba: public Hewan{
+    public:
+
+void message_LumbaLumba(){
+    cout << "Nama LumbaLumba : Asep" << endl;
+    cout << "Umurnya: " << umur << " tahun" << endl;
+    cout << "Makanan kesukaan LumbaLumba adalah cumi dan ikan" << endl;
+    }
+};
+
+int main ()
+{
+	Zebra zeb;
+	LumbaLumba LL;
+	char n1[10]="Budi";
+	char n2[10]="Asep";
+
+	zeb.set_data (4,n1);
+	LL.set_data (4,n2);
+
+	zeb.message_zebra() ;
+	LL.message_LumbaLumba() ;
+
+	return 0;
+}
