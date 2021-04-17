@@ -10,7 +10,7 @@
 using namespace std;
 
 class Hewan{
-	private:
+	protected:
 	 int umur;
 	 char n1[10], n2[10];
 	public:
