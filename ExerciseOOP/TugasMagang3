@@ -40,8 +40,8 @@ void message_LumbaLumba(){
     }
 };
 
-int main ()
-{
+int main (){
+
 	Zebra zeb;
 	LumbaLumba LL;
 	char n1[10]="Budi";
