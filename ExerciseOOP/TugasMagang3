@@ -4,6 +4,7 @@
 
 //Solution :
 
+
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -23,9 +24,9 @@ class Zebra : public Hewan
 {public:
 
 void message_zebra(){
-    cout << "Nama zebra : Budi" << endl;
+    cout << "Nama zebra: " << "Budi" << endl;
     cout << "Umurnya: " << umur << " tahun" << endl;
-    cout << "Makanan kesukaan zebra adalah rumput-rumputan" << endl;
+    cout << "Makanan favorit: " << "rumput-rumputan" << endl;
     }
 };
 
@@ -33,9 +34,9 @@ class LumbaLumba: public Hewan{
     public:
 
 void message_LumbaLumba(){
-    cout << "Nama LumbaLumba : Asep" << endl;
+    cout << "Nama LumbaLumba: " << "Asep" << endl;
     cout << "Umurnya: " << umur << " tahun" << endl;
-    cout << "Makanan kesukaan LumbaLumba adalah cumi dan ikan" << endl;
+    cout << "Makanan favorit: " << "cumi dan ikan" << endl;
     }
 };
 
