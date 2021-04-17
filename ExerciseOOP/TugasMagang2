@@ -1,0 +1,28 @@
+//Problem : Write a program with a mother class and an inherited daugther class.Both of them should have a method void
+            display ()that prints a message (different for mother and daugther).In the main define a daughter and call the display() method on it.
+//Solution :
+
+#include <iostream>
+using namespace std;
+
+class mother{
+public:
+	void display (){
+		cout << "mother: Citra\n";
+		cout << "mother: 52 Tahun\n";
+	}
+};
+class daughter : public mother{
+public:
+	void display (){
+		cout << "daughter: Syifa\n";
+		cout << "daughter: 22 Tahun\n";
+	}
+};
+int main (){
+	daughter ap;
+	ap.display();
+	mother mm;
+	mm.display();
+	return 0;
+}
