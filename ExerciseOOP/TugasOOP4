@@ -5,12 +5,12 @@
 #include <iostream>
 using namespace std;
 
-class Umpama{
-	public:
+class Umpama{                           //Kelas pada imagin atau umpama
+	public:                         //Dapat diakses oleh semua orang 
 
-	double x,y;
+	double x,y;                     //privat atribut
 
-	Umpama(double ax, double ay){
+	Umpama(double ax, double ay){   //konstruktor parameter
 
 	x=ax;
 	y=ay;}
@@ -18,28 +18,30 @@ class Umpama{
 
 int main(){
 
-	double an1,an2;
-	cout << "Angka pertama \n";
-	cout<< "Angka asli:";
-	cin>> an1;
-	cout<< "Angka umpama:";
-	cin>> an2;
+     //print nilai dari data yang akan diproses yang meliputi dari input dan outputnya 
+	double an1,an2;                 
+	cout << "Angka pertama \n";       
+	cout << "Angka asli:";            
+	cin >> an1;                       
+	cout << "Angka umpama:";          
+	cin >> an2;
+	
 	Umpama angka1(an1,an2);
 	cout << "Angka kedua \n";
-
-    double an3,an4;
-	cout<< "Angka asli:";
-	cin>> an3;
-	cout<< "Angka umpama:";
-	cin>> an4;
+     //print nilai dari data yang akan diproses yang meliputi dari input dan outputnya
+        double an3,an4;
+	cout << "Angka asli:";
+	cin >> an3;
+	cout << "Angka umpama:";
+	cin >> an4;
 	Umpama angka2(an3,an4);
-
-	double asli;
+  //print nilai dari angka asli yang akan diproses atau dijalankan pada terminalnya
+    double asli;
     asli = angka1.x +angka2.x;
-
+  //print nilai dari angka umpama yang akan diproses atau dijalankan pada terminalnya
     double umpama;
     umpama = angka2.x + angka1.y;
-
+  //print dari hasil yang sudah diproses
     cout << "Jumla angka sebenarnya "<< asli << "\n";
     cout << "Jumlah angka umpama "<< umpama;
 
