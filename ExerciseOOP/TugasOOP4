@@ -34,7 +34,7 @@ int main(){
 	cin>> an4;
 	Imagin angka2(an3,an4);
 
-	double Origin;
+    double Origin;
     Origin = angka1.x +angka2.x;
 
     double Imagin;
