@@ -6,6 +6,7 @@ Pointer adalah penunjuk suatu variabel. Karena menunjuk suatu variabel, maka poi
 A.	Operator Address-Of (&)
     Setiap variabel, fungsi, struct, atau objek lain yang dibuat dalam program memiliki lokasinya sendiri di memori. Alokasi setiap variabel disimpan di alamat memori tertentu.
     Misalnya terdapat variabel bernama “var”. Untuk mengetahui alamat memori dari variabel, digunakan operator address-of (&) didepan nama variabelnya.
+    
     int var = 5;
     printf("%d\n", var);
     printf("%p\n", &var);
@@ -13,7 +14,5 @@ A.	Operator Address-Of (&)
     OUTPUT:
     5
     0x7fffdeb3ed84
-    
-    Output bisa berbeda-beda di tiap eksekusi.
-    0x7fffdeb3ed84 merupakan alamat memori dari variabel var.
-    
+Output bisa berbeda-beda di tiap eksekusi.
+0x7fffdeb3ed84 merupakan alamat memori dari variabel var.        
